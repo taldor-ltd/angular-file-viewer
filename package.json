@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "demo.gh-pages": "npm run demo.build & npm run demo.deploy",
+    "demo.build": "cd modules/demo && ng build --prod",
+    "demo.deploy": "gh-pages -d modules/demo/dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

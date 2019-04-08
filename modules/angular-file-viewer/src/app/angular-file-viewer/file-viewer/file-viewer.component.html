@@ -1,0 +1,20 @@
+<span [ngSwitch]="type">
+  <span *ngSwitchCase="'application/pdf'">
+    <pdf-viewer [src]="src" [show-all]="true"></pdf-viewer>
+  </span>
+  <span *ngSwitchCase="'image/jpeg'">
+    <img [src]="src" class="img-responsive margin-auto">
+  </span>
+  <span *ngSwitchCase="'image/png'">
+    <img [src]="src" class="img-responsive margin-auto">
+  </span>
+  <span *ngSwitchCase="'video/mp4'">
+    <video controls width="100%">
+      <source [src]="src" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </span>
+  <span *ngSwitchDefault>
+    סוג קובץ לא נתמך
+  </span>
+</span>

@@ -1,0 +1,9 @@
+<ul>
+  <li (click)="changeSource('/assets/pdf/sample.pdf', 'application/pdf')">pdf</li>
+  <li (click)="changeSource('/assets/png/sample.png', 'image/png')">png</li>
+  <li (click)="changeSource('/assets/jpg/sample.jpg', 'image/jpeg')">jpeg</li>
+  <li (click)="changeSource('/assets/mp4/sample.mp4', 'video/mp4')">mp4</li>
+</ul>
+
+<tld-file-viewer *ngIf="src" [src]="src" [type]="type">
+</tld-file-viewer>
