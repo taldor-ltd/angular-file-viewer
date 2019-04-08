@@ -1,5 +1,5 @@
 {
-  "name": "angular-file-viewer",
+  "name": "@taldor-ltd/angular-file-viewer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
+    "pack": "npm pack ./dist",
     "publish": "npm publish ./dist --access public"
   },
   "private": true,

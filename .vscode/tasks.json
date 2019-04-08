@@ -8,6 +8,24 @@
       "script": "start",
       "path": "modules/angular-file-viewer/",
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "packagr",
+      "path": "modules/angular-file-viewer/",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "modules/demo/",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "pack",
+      "path": "modules/angular-file-viewer/",
+      "problemMatcher": []
     }
   ]
 }

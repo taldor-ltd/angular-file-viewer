@@ -44,3 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# NPM test pack file
+modules/angular-file-viewer/taldor-ltd-angular-file-viewer-0.0.0.tgz
