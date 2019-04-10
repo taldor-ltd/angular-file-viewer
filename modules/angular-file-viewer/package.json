@@ -1,6 +1,8 @@
 {
   "name": "@taldor-ltd/angular-file-viewer",
-  "version": "0.0.0",
+  "version": "1.0.1",
+  "description": "File viewer for Angular",
+  "author": "Taldor LTD",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +14,7 @@
     "pack": "npm pack ./dist",
     "publish": "npm publish ./dist --access public"
   },
-  "private": true,
+  "private": false,
   "peerDependencies": {
     "@angular/core": ">=4.0.0",
     "@angular/common": ">=4.0.0",
@@ -54,5 +56,21 @@
     "tslint": "~5.11.0",
     "typescript": "3.1.6",
     "zone.js": "^0.8.26"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taldor-ltd/angular-file-viewer.git"
+  },
+  "keywords": [
+    "angular",
+    "file",
+    "viewer",
+    "pdf",
+    "pdf-viewer",
+    "images"
+  ],
+  "bugs": {
+    "url": "https://github.com/taldor-ltd/angular-file-viewer/issues"
+  },
+  "homepage": "https://github.com/taldor-ltd/angular-file-viewer#readme"
 }

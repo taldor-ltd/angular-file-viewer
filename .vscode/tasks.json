@@ -26,6 +26,12 @@
       "script": "pack",
       "path": "modules/angular-file-viewer/",
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "publish",
+      "path": "modules/angular-file-viewer/",
+      "problemMatcher": []
     }
   ]
 }
