@@ -32,6 +32,21 @@
       "script": "publish",
       "path": "modules/angular-file-viewer/",
       "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "demo.gh-pages",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "demo.build",
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "demo.deploy",
+      "problemMatcher": []
     }
   ]
 }
