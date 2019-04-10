@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  cursor: pointer;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(207, 132, 71);
+}
+
+li a.active {
+  background-color: rgb(42, 163, 42);
+}
+
+.file-viewer-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  display: inline-block;
+}

@@ -1,9 +1,31 @@
 <ul>
-  <li (click)="changeSource('/assets/pdf/sample.pdf', 'application/pdf')">pdf</li>
-  <li (click)="changeSource('/assets/png/sample.png', 'image/png')">png</li>
-  <li (click)="changeSource('/assets/jpg/sample.jpg', 'image/jpeg')">jpeg</li>
-  <li (click)="changeSource('/assets/mp4/sample.mp4', 'video/mp4')">mp4</li>
+  <li>
+    <a (click)="changeSource('/assets/pdf/sample.pdf', 'application/pdf')"
+      [ngClass]="{'active': type === 'application/pdf'}">
+      pdf
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('/assets/png/sample.png', 'image/png')"
+      [ngClass]="{'active': type === 'image/png'}">
+      png
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('/assets/jpg/sample.jpg', 'image/jpeg')"
+      [ngClass]="{'active': type === 'image/jpeg'}">
+      jpeg
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('/assets/mp4/sample.mp4', 'video/mp4')"
+      [ngClass]="{'active': type === 'video/mp4'}">
+      mp4
+    </a>
+  </li>
 </ul>
 
-<tld-file-viewer *ngIf="src" [src]="src" [type]="type">
-</tld-file-viewer>
+<div class="file-viewer-container" *ngIf="src">
+  <tld-file-viewer [src]="src" [type]="type">
+  </tld-file-viewer>
+</div>
