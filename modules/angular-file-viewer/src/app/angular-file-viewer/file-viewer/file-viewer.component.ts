@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FileMimeType } from './file-mime-type';
 
 @Component({
   selector: 'tld-file-viewer',
@@ -6,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./file-viewer.component.css']
 })
 export class FileViewerComponent implements OnInit {
-  @Input() type: 'application/pdf' | 'image/jpeg' | 'image/png' | 'video/mp4';
+  fileMimeType = FileMimeType;
+  @Input() type: FileMimeType;
   @Input() src: any;
 
   ngOnInit(): void {

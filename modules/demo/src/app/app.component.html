@@ -1,25 +1,25 @@
 <ul>
   <li>
-    <a (click)="changeSource('/assets/pdf/sample.pdf', 'application/pdf')"
-      [ngClass]="{'active': type === 'application/pdf'}">
+    <a (click)="changeSource('/assets/pdf/sample.pdf', fileMimeType.PDF)"
+      [ngClass]="{'active': type === fileMimeType.PDF}">
       pdf
     </a>
   </li>
   <li>
-    <a (click)="changeSource('/assets/png/sample.png', 'image/png')"
-      [ngClass]="{'active': type === 'image/png'}">
+    <a (click)="changeSource('/assets/png/sample.png', fileMimeType.PNG)"
+      [ngClass]="{'active': type === fileMimeType.PNG}">
       png
     </a>
   </li>
   <li>
-    <a (click)="changeSource('/assets/jpg/sample.jpg', 'image/jpeg')"
-      [ngClass]="{'active': type === 'image/jpeg'}">
+    <a (click)="changeSource('/assets/jpg/sample.jpg', fileMimeType.JPEG)"
+      [ngClass]="{'active': type === fileMimeType.JPEG}">
       jpeg
     </a>
   </li>
   <li>
-    <a (click)="changeSource('/assets/mp4/sample.mp4', 'video/mp4')"
-      [ngClass]="{'active': type === 'video/mp4'}">
+    <a (click)="changeSource('/assets/mp4/sample.mp4', fileMimeType.MP4)"
+      [ngClass]="{'active': type === fileMimeType.MP4}">
       mp4
     </a>
   </li>

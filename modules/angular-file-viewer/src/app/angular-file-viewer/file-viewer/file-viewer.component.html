@@ -1,14 +1,14 @@
 <span [ngSwitch]="type">
-  <span *ngSwitchCase="'application/pdf'">
+  <span *ngSwitchCase="fileMimeType.PDF">
     <pdf-viewer [src]="src" [show-all]="true"></pdf-viewer>
   </span>
-  <span *ngSwitchCase="'image/jpeg'">
+  <span *ngSwitchCase="fileMimeType.JPEG">
     <img [src]="src" class="img-responsive margin-auto">
   </span>
-  <span *ngSwitchCase="'image/png'">
+  <span *ngSwitchCase="fileMimeType.PNG">
     <img [src]="src" class="img-responsive margin-auto">
   </span>
-  <span *ngSwitchCase="'video/mp4'">
+  <span *ngSwitchCase="fileMimeType.MP4">
     <video controls width="100%">
       <source [src]="src" type="video/mp4">
       Your browser does not support HTML5 video.
