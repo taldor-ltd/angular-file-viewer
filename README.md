@@ -72,10 +72,11 @@ export class AppComponent {
 
 ## Options
 
-| Property | Type | Required |
-| --- | ---- | --- |
-| [[src]](#src) | *string, UInt8Array* | Required |
-| [[type]](#type) | *FileMimeType* | Required |
+| Property | Type | Required | Default |
+| --- | ---- | --- | --- |
+| [[src](README.md#src---string-UInt8Array)] | *string, UInt8Array* | Required | - |
+| [[type](README.md#type---FileMimeType)] | *FileMimeType* | Required | - |
+| [[pdfZoom](README.md#pdfZoom---number)] | *number* | Optional | 1 |
 
 ### [src] - *string, UInt8Array*
 
@@ -94,7 +95,7 @@ export class AppComponent {
 [src]="'data:application/stream;base64,Hello%2C%20World!'"
 ```
 
-### [type] - FileMimeType
+### [type] - *FileMimeType*
 
 FileMimeType is an enum exported from this package. It's values are:
 
@@ -108,3 +109,12 @@ use it lis this:
 ```
 type = FileMimeType.PDF
 ```
+
+### [pdfZoom] - *number*
+
+Change this property value to zoom in and out in pdf files.
+Default value is 1.
+
+````html
+[pdfZoom]="1"
+````
