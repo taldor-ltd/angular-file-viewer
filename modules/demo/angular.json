@@ -73,7 +73,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-file-viewer:build"
+            "browserTarget": "angular-file-viewer:build",
+            "baseHref": "/"
           },
           "configurations": {
             "production": {

@@ -35,3 +35,16 @@ li a.active {
   background-color: rgb(240, 240, 240);
   display: inline-block;
 }
+
+.pdf-zoom-buttons {
+  position: fixed;
+  bottom: 60px;
+  left: 60px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-zoom-buttons > button:not(:first-child) {
+  margin-top: 10px;
+}
