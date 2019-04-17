@@ -1,6 +1,6 @@
 {
   "name": "@taldor-ltd/angular-file-viewer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "File viewer for Angular",
   "author": "Taldor LTD",
   "scripts": {
