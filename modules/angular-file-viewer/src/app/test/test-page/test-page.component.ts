@@ -1,21 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { FileMimeType } from 'src/app/angular-file-viewer/file-viewer/file-mime-type';
 
 @Component({
   selector: 'tld-test-page',
   templateUrl: './test-page.component.html',
   styleUrls: ['./test-page.component.css']
 })
-export class TestPageComponent implements OnInit {
+export class TestPageComponent {
+  fileMimeType = FileMimeType;
   src: string;
-  type: string;
+  type: FileMimeType;
+  pdfZoom = 1;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  changeSource(src: string, type: string) {
+  changeSource(src: string, type: FileMimeType) {
     this.src = src;
     this.type = type;
+  }
+
+  pdfZoomIn(): void {
+    this.pdfZoom++;
+  }
+
+  pdfZoomOut(): void {
+    if (this.pdfZoom > 1 ) {
+      this.pdfZoom--;
+    }
   }
 }

@@ -10,6 +10,7 @@ export class FileViewerComponent implements OnInit {
   fileMimeType = FileMimeType;
   @Input() type: FileMimeType;
   @Input() src: any;
+  @Input() pdfZoom = 1;
 
   ngOnInit(): void {
     window.scroll(0, 0);

@@ -1,6 +1,6 @@
 <span [ngSwitch]="type">
   <span *ngSwitchCase="fileMimeType.PDF">
-    <pdf-viewer [src]="src" [show-all]="true"></pdf-viewer>
+    <pdf-viewer [src]="src" [show-all]="true" [zoom]="pdfZoom"></pdf-viewer>
   </span>
   <span *ngSwitchCase="fileMimeType.JPEG">
     <img [src]="src" class="img-responsive margin-auto">
