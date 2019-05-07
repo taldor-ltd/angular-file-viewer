@@ -15,6 +15,7 @@
     </video>
   </span>
   <span *ngSwitchDefault>
-    <ng-content></ng-content>
+    <span #content><ng-content></ng-content></span>
+    <span *ngIf="!content.innerHTML.trim()">File type is not supported</span>
   </span>
 </span>
