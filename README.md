@@ -1,4 +1,10 @@
 <h1 align="center">File Viewer for Angular</h1>
+<ul style="list-style:none;display:flex;justify-content:center;margin-bottom:30px">
+  <li style="margin-right:10px;background-color:#236224;padding:2px 5px;border-radius:10px">PDF</li>
+  <li style="margin-right:10px;background-color:#236224;padding:2px 5px;border-radius:10px">JPEG</li>
+  <li style="margin-right:10px;background-color:#236224;padding:2px 5px;border-radius:10px">PNG</li>
+  <li style="margin-right:10px;background-color:#236224;padding:2px 5px;border-radius:10px">MP4</li>
+</ul>
 <p align="center">
   <a href="https://www.npmjs.com/package/@taldor-ltd/angular-file-viewer">
     <img src="https://img.shields.io/npm/dt/@taldor-ltd/angular-file-viewer.svg" alt="downloads">
@@ -16,6 +22,7 @@ https://taldor-ltd.github.io/angular-file-viewer/
 * [Install](README.md#install)
 * [Usage](README.md#usage)
 * [Options](README.md#options)
+* [Unsupported file types](README.md#Unsupported-file-types)
 
 ## Install
 
@@ -118,3 +125,18 @@ Default value is 1.
 ````html
 [pdfZoom]="1"
 ````
+
+## Unsupported file types
+
+An unsupported file type will display a default message:
+`File type is not supported`
+
+To override this message with any other content, just add a content to `tld-file-viewer` tag:
+
+```html
+<tld-file-viewer [src]="src" [type]="type">
+  <h1 style="margin:auto;">some message</h1>
+</tld-file-viewer>
+```
+
+NOTE: You have a file type you wish to display that this repository is not supporting yet, open it as an issue tagged with `enhancement` and we'll try to add it as fast as we can. If you need it asap, you can ask for a PR, we'll check it, and once it's verified we'll happily merge it.
