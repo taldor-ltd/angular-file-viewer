@@ -23,6 +23,12 @@
       mp4
     </a>
   </li>
+  <li>
+    <a (click)="changeSource('assets/txt/sample.txt', 9)"
+      [ngClass]="{'active': type === 9}">
+      txt
+    </a>
+  </li>
 </ul>
 
 <div class="file-viewer-container" *ngIf="src">
@@ -31,5 +37,8 @@
     <button (click)="pdfZoomOut()">-</button>
   </div>
   <tld-file-viewer [src]="src" [type]="type" [pdfZoom]="pdfZoom">
+    <h2>
+      This file type is unsupported (yet :)
+    </h2>
   </tld-file-viewer>
 </div>
