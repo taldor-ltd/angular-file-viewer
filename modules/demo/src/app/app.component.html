@@ -1,35 +1,41 @@
 <ul>
-    <li>
-      <a (click)="changeSource('assets/pdf/sample.pdf', fileMimeType.PDF)"
-        [ngClass]="{'active': type === fileMimeType.PDF}">
-        pdf
-      </a>
-    </li>
-    <li>
-      <a (click)="changeSource('assets/png/sample.png', fileMimeType.PNG)"
-        [ngClass]="{'active': type === fileMimeType.PNG}">
-        png
-      </a>
-    </li>
-    <li>
-      <a (click)="changeSource('assets/jpg/sample.jpg', fileMimeType.JPEG)"
-        [ngClass]="{'active': type === fileMimeType.JPEG}">
-        jpeg
-      </a>
-    </li>
-    <li>
-      <a (click)="changeSource('assets/mp4/sample.mp4', fileMimeType.MP4)"
-        [ngClass]="{'active': type === fileMimeType.MP4}">
-        mp4
-      </a>
-    </li>
-  </ul>
-  
-  <div class="file-viewer-container" *ngIf="src">
-    <div *ngIf="type === fileMimeType.PDF" class="pdf-zoom-buttons">
-      <button (click)="pdfZoomIn()">+</button>
-      <button (click)="pdfZoomOut()">-</button>
-    </div>
-    <tld-file-viewer [src]="src" [type]="type" [pdfZoom]="pdfZoom">
-    </tld-file-viewer>
+  <li>
+    <a (click)="changeSource('assets/pdf/sample.pdf', fileMimeType.PDF)"
+      [ngClass]="{'active': type === fileMimeType.PDF}">
+      pdf
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('assets/png/sample.png', fileMimeType.PNG)"
+      [ngClass]="{'active': type === fileMimeType.PNG}">
+      png
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('assets/jpg/sample.jpg', fileMimeType.JPEG)"
+      [ngClass]="{'active': type === fileMimeType.JPEG}">
+      jpeg
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('assets/mp4/sample.mp4', fileMimeType.MP4)"
+      [ngClass]="{'active': type === fileMimeType.MP4}">
+      mp4
+    </a>
+  </li>
+  <li>
+    <a (click)="changeSource('assets/txt/sample.txt', 9)" [ngClass]="{'active': type === 9}">
+      txt
+    </a>
+  </li>
+</ul>
+
+<div class="file-viewer-container" *ngIf="src">
+  <div *ngIf="type === fileMimeType.PDF" class="pdf-zoom-buttons">
+    <button (click)="pdfZoomIn()">+</button>
+    <button (click)="pdfZoomOut()">-</button>
   </div>
+  <tld-file-viewer [src]="src" [type]="type" [pdfZoom]="pdfZoom">
+    <h2>File type is not supported (yet :)</h2>
+  </tld-file-viewer>
+</div>
