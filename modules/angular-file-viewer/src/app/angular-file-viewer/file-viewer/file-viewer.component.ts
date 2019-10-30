@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FileMimeType } from './file-mime-type';
 
 @Component({
@@ -6,13 +6,9 @@ import { FileMimeType } from './file-mime-type';
   templateUrl: './file-viewer.component.html',
   styleUrls: ['./file-viewer.component.css']
 })
-export class FileViewerComponent implements OnInit {
+export class FileViewerComponent {
   fileMimeType = FileMimeType;
   @Input() type: FileMimeType;
   @Input() src: any;
   @Input() pdfZoom = 1;
-
-  ngOnInit(): void {
-    window.scroll(0, 0);
-  }
 }
