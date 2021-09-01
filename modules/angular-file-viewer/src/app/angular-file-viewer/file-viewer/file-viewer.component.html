@@ -9,7 +9,7 @@
     <img [src]="src" class="img-responsive margin-auto">
   </span>
   <span *ngSwitchCase="fileMimeType.MP4">
-    <video controls width="100%">
+    <video controls controlsList="nodownload" width="100%">
       <source [src]="src" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
